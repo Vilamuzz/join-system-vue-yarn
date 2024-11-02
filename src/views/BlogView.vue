@@ -227,23 +227,27 @@ import CategoryCard from '@/components/CategoryCard.vue'
       <h2 class="text-3xl font-semibold mb-8">All Categories</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         <CategoryCard
+          to="/category"
+          icon="@/assets/images/icon/Icon.png"
           title="Business"
-          imageSrc="src/assets/images/icon/Icon.png"
           description="Deskripsi singkat untuk kategori 1."
         />
         <CategoryCard
+          to="/category"
+          icon="@/assets/images/icon/Icon2.png"
           title="Startup"
-          imageSrc="src/assets/images/icon/Icon2.png"
           description="Deskripsi singkat untuk kategori 2."
         />
         <CategoryCard
+          to="/category"
+          icon="@/assets/images/icon/Icon3.png"
           title="Economy"
-          imageSrc="src/assets/images/icon/Icon3.png"
           description="Deskripsi singkat untuk kategori 3."
         />
         <CategoryCard
+          to="/category"
+          icon="@/assets/images/icon/Icon4.png"
           title="Technology"
-          imageSrc="src/assets/images/icon/Icon4.png"
           description="Deskripsi singkat untuk kategori 4."
         />
       </div>
