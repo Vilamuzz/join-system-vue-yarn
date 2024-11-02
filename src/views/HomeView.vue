@@ -229,7 +229,7 @@ import backgroundImage from '@/assets/images/man-in-black-suit-wearing-eye-glass
       <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
         <AuthorCard name="Author Name 1" position="Position 1"
           ><img
-            src="src/assets/images/man-in-yellow-button-up-shirt-wearing-black-framed-eyeglasses-7562313.png"
+            src="../assets/images/man-in-yellow-button-up-shirt-wearing-black-framed-eyeglasses-7562313.png"
             loading="lazy"
             alt=""
             class="w-24 h-24 rounded-full mb-4"
@@ -237,7 +237,7 @@ import backgroundImage from '@/assets/images/man-in-black-suit-wearing-eye-glass
 
         <AuthorCard name="Author Name 2" position="Position 2"
           ><img
-            src="src/assets/images/woman-in-white-and-black-striped-shirt-wearing-black-sunglasses-3671083.png"
+            src="../assets/images/woman-in-white-and-black-striped-shirt-wearing-black-sunglasses-3671083.png"
             loading="lazy"
             alt=""
             class="w-24 h-24 rounded-full mb-4"
@@ -245,7 +245,7 @@ import backgroundImage from '@/assets/images/man-in-black-suit-wearing-eye-glass
 
         <AuthorCard name="Author Name 3" position="Position 3"
           ><img
-            src="src/assets/images/fashion-woman-cute-shoes-5704849.png"
+            src="../assets/images/fashion-woman-cute-shoes-5704849.png"
             loading="lazy"
             alt=""
             class="w-24 h-24 rounded-full mb-4"
@@ -253,7 +253,7 @@ import backgroundImage from '@/assets/images/man-in-black-suit-wearing-eye-glass
 
         <AuthorCard name="Author Name 4" position="Position 4"
           ><img
-            src="src/assets/images/content-baker-with-delicious-puff-in-cafeteria-6205509.png"
+            src="../assets/images/content-baker-with-delicious-puff-in-cafeteria-6205509.png"
             loading="lazy"
             alt=""
             class="w-24 h-24 rounded-full mb-4"

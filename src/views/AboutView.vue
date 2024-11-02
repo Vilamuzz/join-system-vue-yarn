@@ -136,7 +136,7 @@ import AuthorCard from '@/components/AuthorCard.vue'
         <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
           <AuthorCard name="Author Name 1" position="Position 1"
             ><img
-              src="src/assets/images/man-in-yellow-button-up-shirt-wearing-black-framed-eyeglasses-7562313.png"
+              src="../assets/images/man-in-yellow-button-up-shirt-wearing-black-framed-eyeglasses-7562313.png"
               loading="lazy"
               alt=""
               class="w-24 h-24 rounded-full mb-4"
@@ -144,7 +144,7 @@ import AuthorCard from '@/components/AuthorCard.vue'
 
           <AuthorCard name="Author Name 2" position="Position 2"
             ><img
-              src="src/assets/images/woman-in-white-and-black-striped-shirt-wearing-black-sunglasses-3671083.png"
+              src="../assets/images/woman-in-white-and-black-striped-shirt-wearing-black-sunglasses-3671083.png"
               loading="lazy"
               alt=""
               class="w-24 h-24 rounded-full mb-4"
@@ -152,7 +152,7 @@ import AuthorCard from '@/components/AuthorCard.vue'
 
           <AuthorCard name="Author Name 3" position="Position 3"
             ><img
-              src="src/assets/images/fashion-woman-cute-shoes-5704849.png"
+              src="../assets/images/fashion-woman-cute-shoes-5704849.png"
               loading="lazy"
               alt=""
               class="w-24 h-24 rounded-full mb-4"
@@ -160,14 +160,14 @@ import AuthorCard from '@/components/AuthorCard.vue'
 
           <AuthorCard name="Author Name 4" position="Position 4"
             ><img
-              src="src/assets/images/content-baker-with-delicious-puff-in-cafeteria-6205509.png"
+              src="../assets/images/content-baker-with-delicious-puff-in-cafeteria-6205509.png"
               loading="lazy"
               alt=""
               class="w-24 h-24 rounded-full mb-4"
           /></AuthorCard>
           <AuthorCard name="Author Name 5" position="Position 5"
             ><img
-              src="src/assets/images/man-in-yellow-button-up-shirt-wearing-black-framed-eyeglasses-7562313.png"
+              src="../assets/images/man-in-yellow-button-up-shirt-wearing-black-framed-eyeglasses-7562313.png"
               loading="lazy"
               alt=""
               class="w-24 h-24 rounded-full mb-4"
@@ -175,7 +175,7 @@ import AuthorCard from '@/components/AuthorCard.vue'
 
           <AuthorCard name="Author Name 6" position="Position 6"
             ><img
-              src="src/assets/images/woman-in-white-and-black-striped-shirt-wearing-black-sunglasses-3671083.png"
+              src="../assets/images/woman-in-white-and-black-striped-shirt-wearing-black-sunglasses-3671083.png"
               loading="lazy"
               alt=""
               class="w-24 h-24 rounded-full mb-4"
@@ -183,7 +183,7 @@ import AuthorCard from '@/components/AuthorCard.vue'
 
           <AuthorCard name="Author Name 7" position="Position 7"
             ><img
-              src="src/assets/images/fashion-woman-cute-shoes-5704849.png"
+              src="../assets/images/fashion-woman-cute-shoes-5704849.png"
               loading="lazy"
               alt=""
               class="w-24 h-24 rounded-full mb-4"
@@ -191,7 +191,7 @@ import AuthorCard from '@/components/AuthorCard.vue'
 
           <AuthorCard name="Author Name 8" position="Position 8"
             ><img
-              src="src/assets/images/content-baker-with-delicious-puff-in-cafeteria-6205509.png"
+              src="../assets/images/content-baker-with-delicious-puff-in-cafeteria-6205509.png"
               loading="lazy"
               alt=""
               class="w-24 h-24 rounded-full mb-4"
