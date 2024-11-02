@@ -179,7 +179,7 @@ import backgroundImage from '@/assets/images/man-in-black-suit-wearing-eye-glass
         />
         <CategoryCard
           title="Technology"
-          imageSrc="src/assets/images/icon/Icon4.png"
+          imageSrc="/assets/images/icon/Icon4.png"
           description="Deskripsi singkat untuk kategori 4."
           ><img
             src="@/assets/images/icon/Icon4.png"
