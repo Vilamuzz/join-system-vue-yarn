@@ -6,6 +6,10 @@ import AuthorCard from '@/components/AuthorCard.vue'
 import CategoryCard from '@/components/CategoryCard.vue'
 import PostCard from '@/components/PostCard.vue'
 import backgroundImage from '@/assets/images/man-in-black-suit-wearing-eye-glasses-sitting-on-gray-sofa-using-macbook-3772622.png'
+import businessImage from '@/assets/images/icon/Icon.png'
+import startupImage from '@/assets/images/icon/Icon2.png'
+import economyImage from '@/assets/images/icon/Icon3.png'
+import technologyImage from '@/assets/images/icon/Icon4.png'
 </script>
 
 <template>
@@ -164,22 +168,22 @@ import backgroundImage from '@/assets/images/man-in-black-suit-wearing-eye-glass
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         <CategoryCard
           title="Business"
-          imageSrc="@/assets/images/icon/Icon.png"
+          :imageSrc="businessImage"
           description="Deskripsi singkat untuk kategori 1."
         />
         <CategoryCard
           title="Startup"
-          imageSrc="@/assets/images/icon/Icon2.png"
+          :imageSrc="startupImage"
           description="Deskripsi singkat untuk kategori 2."
         />
         <CategoryCard
           title="Economy"
-          imageSrc="@/assets/images/icon/Icon3.png"
+          :imageSrc="economyImage"
           description="Deskripsi singkat untuk kategori 3."
         />
         <CategoryCard
           title="Technology"
-          imageSrc="@/assets/images/icon/Icon4.png"
+          :imageSrc="technologyImage"
           description="Deskripsi singkat untuk kategori 4."
         />
       </div>
