@@ -174,14 +174,19 @@ import backgroundImage from '@/assets/images/man-in-black-suit-wearing-eye-glass
         />
         <CategoryCard
           title="Economy"
-          imageSrc="src/assets/images/icon/Icon3.png"
+          imageSrc="@/assets/images/icon/Icon3.png"
           description="Deskripsi singkat untuk kategori 3."
         />
         <CategoryCard
           title="Technology"
           imageSrc="src/assets/images/icon/Icon4.png"
           description="Deskripsi singkat untuk kategori 4."
-        />
+          ><img
+            src="@/assets/images/icon/Icon4.png"
+            alt=""
+            loading="lazy"
+            class="w-10 h-auto bg-gray-100 border rounded-lg"
+        /></CategoryCard>
       </div>
     </div>
     <div class="relative max-w-[1440px] mx-16 py-16">
@@ -232,13 +237,8 @@ import backgroundImage from '@/assets/images/man-in-black-suit-wearing-eye-glass
         <AuthorCard
           name="Author Name 4"
           position="Position 4"
-          imageSrc="@/assets/images/content-baker-with-delicious-puff-in-cafeteria-6205509.png"
-          ><img
-            src="@/assets/images/content-baker-with-delicious-puff-in-cafeteria-6205509.png"
-            alt=""
-            loading="lazy"
-            class="w-10 h-auto mb-2 bg-gray-100 border rounded-lg"
-        /></AuthorCard>
+          imageSrc="/assets/images/content-baker-with-delicious-puff-in-cafeteria-6205509.png"
+        />
       </div>
     </div>
 
