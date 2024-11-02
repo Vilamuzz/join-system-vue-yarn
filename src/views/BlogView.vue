@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import MainLayout from '@/layouts/MainLayout.vue'
 import Button from '@/components/Button.vue'
-import Category from '@/components/Category.vue'
 import Join from '@/components/Join.vue'
+import CategoryCard from '@/components/CategoryCard.vue'
 </script>
 <template>
   <MainLayout>
@@ -28,11 +28,11 @@ import Join from '@/components/Join.vue'
           </div>
         </div>
         <div class="font-medium leading-5 text-sm">
-          <span
-            ><span class="text-neutral-600">By </span>
+          <span>
+            <span class="text-neutral-600">By </span>
             <span class="text-yellow-300">John Doe </span>
-            <span class="text-neutral-600">l May 23, 2022</span></span
-          >
+            <span class="text-neutral-600">l May 23, 2022</span>
+          </span>
         </div>
         <div class="text-zinc-500 leading-7 items-start flex self-stretch">
           <p>
@@ -42,7 +42,7 @@ import Join from '@/components/Join.vue'
           </p>
         </div>
         <div class="flex pt-4 items-end px-1">
-          <Button text="Read More &gt" />
+          <Button text="Read More &gt" route="/blog/post" />
         </div>
       </div>
     </div>
@@ -225,7 +225,28 @@ import Join from '@/components/Join.vue'
 
     <div class="max-w-[1440px] mx-16 py-16">
       <h2 class="text-3xl font-semibold mb-8">All Categories</h2>
-      <Category />
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <CategoryCard
+          title="Business"
+          imageSrc="src/assets/images/icon/Icon.png"
+          description="Deskripsi singkat untuk kategori 1."
+        />
+        <CategoryCard
+          title="Startup"
+          imageSrc="src/assets/images/icon/Icon2.png"
+          description="Deskripsi singkat untuk kategori 2."
+        />
+        <CategoryCard
+          title="Economy"
+          imageSrc="src/assets/images/icon/Icon3.png"
+          description="Deskripsi singkat untuk kategori 3."
+        />
+        <CategoryCard
+          title="Technology"
+          imageSrc="src/assets/images/icon/Icon4.png"
+          description="Deskripsi singkat untuk kategori 4."
+        />
+      </div>
       <Join />
     </div>
   </MainLayout>

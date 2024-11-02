@@ -1,28 +1,37 @@
 <script setup lang="ts">
 import MainLayout from '@/layouts/MainLayout.vue'
 import Button from '@/components/Button.vue'
-import Category from '@/components/Category.vue'
 import Join from '@/components/Join.vue'
+import AuthorCard from '@/components/AuthorCard.vue'
+import CategoryCard from '@/components/CategoryCard.vue'
+import PostCard from '@/components/PostCard.vue'
 </script>
 
 <template>
   <MainLayout>
-    <div class="w-full flex flex-col mb-20">
+    <div class="w-full flex flex-col mb-20 min-h-screen">
       <div
-        class="before:[transform:scaleY(-1)_rotate(-180deg)] before:[background-position: center] before:[background-size:cover] before:[content:''] flex flex-grow flex-col max-h-full max-w-full z-0 relative before:z-[-1] before:bg-[url('@/assets/images/man-in-black-suit-wearing-eye-glasses-sitting-on-gray-sofa-using-macbook-3772622.png')] before:bg-no-repeat before:absolute before:inset-0"
+        class="relative bg-cover bg-center"
+        style="
+          background-image: url('/src/assets/images/man-in-black-suit-wearing-eye-glasses-sitting-on-gray-sofa-using-macbook-3772622.png');
+        "
       >
+        <!-- Dark Overlay -->
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+
+        <!-- Content Layer -->
         <div
-          class="font-inter pr-[556px] bg-[radial-gradient(transparent,_#00000099)] text-white flex pt-32 pl-20 pb-48 flex-grow flex-col gap-y-4 items-start"
+          class="relative text-white flex px-16 py-32 flex-grow flex-col gap-y-4 items-start"
         >
           <div class="tracking-[3px] uppercase leading-5">
             <span
-              ><span class="font-medium">Posted on </span>
-              <span class="font-black">startup</span></span
+              ><span class="font-medium">Posted on </span
+              ><span class="font-black">startup</span></span
             >
           </div>
-          <div class="[max-width:804px] pt-2 pl-px self-stretch">
+          <div class="[max-width:800px] pt-2 pl-px self-stretch">
             <div
-              class="tracking-[-2px] leading-[64px] text-[56px] font-sen font-bold items-center flex"
+              class="tracking-[-2px] leading-[64px] text-[56px] font-bold items-center flex"
             >
               <p>Step-by-step guide to choosing great font pairs</p>
             </div>
@@ -30,13 +39,9 @@ import Join from '@/components/Join.vue'
           <div class="tracking-[0px] pt-2 leading-7">
             <span
               ><span class="text-blue-600"
-                ><span class="text-white">By </span>
-                James West
-                <span class="text-white"
-              /></span>
-              <span class="whitespace-pre-wrap">
-                {{ '  May 23, 2022' }}</span
-              ></span
+                ><span class="text-white">By </span>James West</span
+              >
+              |<span class="whitespace-pre-wrap"> May 23, 2022</span></span
             >
           </div>
           <div class="tracking-[0px] w-[599px] leading-7 items-start flex">
@@ -47,11 +52,12 @@ import Join from '@/components/Join.vue'
             </p>
           </div>
           <div class="flex pt-8 items-end">
-            <Button text="Read More &gt" />
+            <Button text="Read More &gt;" />
           </div>
         </div>
       </div>
     </div>
+
     <div class="flex w-full px-12 mb-20">
       <!-- Bagian Featured Post (Kiri) -->
       <div class="w-3/5 p-4">
@@ -60,6 +66,7 @@ import Join from '@/components/Join.vue'
           <img
             src="../assets/images/white-concrete-building-1838640.png"
             alt="Featured Post"
+            loading="lazy"
             class="w-full h-96 object-cover mb-7"
           />
           <p class="text-sm mb-4">By John Deo | Aug 23, 2021</p>
@@ -87,37 +94,17 @@ import Join from '@/components/Join.vue'
         </div>
 
         <div>
-          <div class="p-6 mb-2 transition duration-300 hover:bg-yellow-100">
-            <p class="text-sm">By John Deo | Aug 23, 2021</p>
-            <h3 class="font-semibold">
-              8 Figma design systems that you can download for free today.
-            </h3>
-          </div>
-          <div class="p-6 mb-2 transition duration-300 hover:bg-yellow-100">
-            <p class="text-sm">By John Deo | Aug 23, 2021</p>
-            <h3 class="font-semibold">
-              8 Figma design systems that you can download for free today.
-            </h3>
-          </div>
-          <div class="p-6 mb-2 transition duration-300 hover:bg-yellow-100">
-            <p class="text-sm">By John Deo | Aug 23, 2021</p>
-            <h3 class="font-semibold">
-              8 Figma design systems that you can download for free today.
-            </h3>
-          </div>
-          <div class="p-6 mb-2 transition duration-300 hover:bg-yellow-100">
-            <p class="text-sm">By John Deo | Aug 23, 2021</p>
-            <h3 class="font-semibold">
-              8 Figma design systems that you can download for free today.
-            </h3>
-          </div>
+          <PostCard />
+          <PostCard />
+          <PostCard />
+          <PostCard />
         </div>
       </div>
     </div>
     <div class="flex flex-col mx-16">
       <img
         loading="lazy"
-        src="https://cdn.builder.io/api/v1/image/assets/TEMP/c70f7be6c65e1aeb76cee8cd48a5a2cb205679fe0a4c6afe3ea9f80564c9ec4e?placeholderIfAbsent=true&apiKey=cc987fc235b043cdb56f509dedbe3ab1"
+        src="@/assets/images/misc/bar.svg"
         alt=""
         class="object-contain self-end aspect-[45.45] max-w-[1061px] w-[1061px] max-md:max-w-full"
       />
@@ -175,7 +162,28 @@ import Join from '@/components/Join.vue'
     </div>
     <div class="max-w-[1440px] mx-16 py-16">
       <h2 class="text-3xl font-semibold text-center mb-8">Choose A Category</h2>
-      <Category />
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <CategoryCard
+          title="Business"
+          imageSrc="src/assets/images/icon/Icon.png"
+          description="Deskripsi singkat untuk kategori 1."
+        />
+        <CategoryCard
+          title="Startup"
+          imageSrc="src/assets/images/icon/Icon2.png"
+          description="Deskripsi singkat untuk kategori 2."
+        />
+        <CategoryCard
+          title="Economy"
+          imageSrc="src/assets/images/icon/Icon3.png"
+          description="Deskripsi singkat untuk kategori 3."
+        />
+        <CategoryCard
+          title="Technology"
+          imageSrc="src/assets/images/icon/Icon4.png"
+          description="Deskripsi singkat untuk kategori 4."
+        />
+      </div>
     </div>
     <div class="relative max-w-[1440px] mx-16 py-16">
       <!-- Foto -->
@@ -204,130 +212,117 @@ import Join from '@/components/Join.vue'
       <h2 class="text-2xl font-bold mb-8 text-center">List of Author</h2>
 
       <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
-        <div class="flex flex-col items-center bg-gray-200 p-6">
-          <img
-            src="../assets/images/man-in-yellow-button-up-shirt-wearing-black-framed-eyeglasses-7562313.png"
-            alt="Author 1"
-            class="w-24 h-24 rounded-full mb-4"
-          />
-          <h3 class="text-lg font-semibold">Author Name 1</h3>
-          <p class="text-sm text-gray-600">Position 1</p>
-          <div class="flex space-x-2 mt-2">
-            <a href="#" class="text-blue-600">Twitter</a>
-            <a href="#" class="text-blue-600">LinkedIn</a>
-          </div>
-        </div>
+        <AuthorCard
+          name="Author Name 1"
+          position="Position 1"
+          imageSrc="src/assets/images/man-in-yellow-button-up-shirt-wearing-black-framed-eyeglasses-7562313.png"
+        />
 
-        <div class="flex flex-col items-center bg-gray-200 p-6">
-          <img
-            src="../assets/images/woman-in-white-and-black-striped-shirt-wearing-black-sunglasses-3671083.png"
-            alt="Author 2"
-            class="w-24 h-24 rounded-full mb-4"
-          />
-          <h3 class="text-lg font-semibold">Author Name 2</h3>
-          <p class="text-sm text-gray-600">Position 2</p>
-          <div class="flex space-x-2 mt-2">
-            <a href="#" class="text-blue-600">Twitter</a>
-            <a href="#" class="text-blue-600">LinkedIn</a>
-          </div>
-        </div>
+        <AuthorCard
+          name="Author Name 2"
+          position="Position 2"
+          imageSrc="src/assets/images/woman-in-white-and-black-striped-shirt-wearing-black-sunglasses-3671083.png"
+        />
 
-        <div class="flex flex-col items-center bg-gray-200 p-6">
-          <img
-            src="../assets/images/fashion-woman-cute-shoes-5704849.png"
-            alt="Author 3"
-            class="w-24 h-24 rounded-full mb-4"
-          />
-          <h3 class="text-lg font-semibold">Author Name 3</h3>
-          <p class="text-sm text-gray-600">Position 3</p>
-          <div class="flex space-x-2 mt-2">
-            <a href="#" class="text-blue-600">Twitter</a>
-            <a href="#" class="text-blue-600">LinkedIn</a>
-          </div>
-        </div>
+        <AuthorCard
+          name="Author Name 3"
+          position="Position 3"
+          imageSrc="src/assets/images/fashion-woman-cute-shoes-5704849.png"
+        />
 
-        <div class="flex flex-col items-center bg-gray-200 p-6">
-          <img
-            src="../assets/images/content-baker-with-delicious-puff-in-cafeteria-6205509.png"
-            alt="Author 4"
-            class="w-24 h-24 rounded-full mb-4"
-          />
-          <h3 class="text-lg font-semibold">Author Name 4</h3>
-          <p class="text-sm text-gray-600">Position 4</p>
-          <div class="flex space-x-2 mt-2">
-            <a href="#" class="text-blue-600">Twitter</a>
-            <a href="#" class="text-blue-600">LinkedIn</a>
-          </div>
-        </div>
+        <AuthorCard
+          name="Author Name 4"
+          position="Position 4"
+          imageSrc="src/assets/images/content-baker-with-delicious-puff-in-cafeteria-6205509.png"
+        />
       </div>
     </div>
-    <div class="max-w-[1440px] flex flex-col m-16">
-      <div
-        class="pb-[74px] bg-[floralwhite] flex justify-center pt-20 flex-grow items-center px-28"
-      >
-        <div
-          class="min-[1270px]:flex-nowrap tracking-[0px] text-slate-800 flex flex-wrap justify-center h-80 flex-grow gap-x-20 gap-y-20 items-end"
+
+    <div class="mx-16 flex gap-x-14 justify-center mb-20">
+      <img
+        src="../assets/images/logo/Featured in.svg"
+        alt=""
+        loading="lazy"
+        class="logo hover:grayscale hover:scale-110 transition-all duration-300"
+      />
+      <img
+        src="../assets/images/logo/Logo 1.svg"
+        alt=""
+        loading="lazy"
+        class="logo hover:grayscale hover:scale-110 transition-all duration-300"
+      />
+      <img
+        src="../assets/images/logo/Logo 2.svg"
+        alt=""
+        loading="lazy"
+        class="logo hover:grayscale hover:scale-110 transition-all duration-300"
+      />
+      <img
+        src="../assets/images/logo/Logo 3.svg"
+        alt=""
+        loading="lazy"
+        class="logo hover:grayscale hover:scale-110 transition-all duration-300"
+      />
+      <img
+        src="../assets/images/logo/Logo 4.svg"
+        alt=""
+        loading="lazy"
+        class="logo hover:grayscale hover:scale-110 transition-all duration-300"
+      />
+      <img
+        src="../assets/images/logo/Logo 5.svg"
+        alt=""
+        loading="lazy"
+        class="logo hover:grayscale hover:scale-110 transition-all duration-300"
+      />
+    </div>
+
+    <div class="mx-16 flex flex-row gap-8 bg-[floralwhite] py-10">
+      <div class="border-r-2 px-10 my-16">
+        <h1 class="tracking-[3px] uppercase font-semibold leading-5">
+          TESTIMONIALS
+        </h1>
+        <h2
+          class="tracking-[-2px] leading-[48px] font-sen w-[345px] font-bold text-4xl mb-2"
         >
-          <div class="flex pb-24 flex-col items-center">
-            <div class="font-inter w-[349px] flex flex-col gap-y-3 items-start">
-              <div class="tracking-[3px] uppercase font-semibold leading-5">
-                TESTIMONIALs
-              </div>
-              <div
-                class="tracking-[-2px] leading-[48px] font-sen w-[345px] font-bold text-4xl items-start flex"
-              >
-                <p>What people say about our blog</p>
-              </div>
-              <div class="[max-width:349px] pt-1 self-stretch">
-                <div class="leading-7 items-center flex">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor.
-                  </p>
-                </div>
-              </div>
-            </div>
+          What people say about our blog
+        </h2>
+        <p class="leading-7">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor.
+        </p>
+      </div>
+
+      <div class="w-[80%] p-10 flex flex-col gap-y-14">
+        <div class="p-4 pl-2 pr-16">
+          <h3 class="text-2xl font-bold">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </h3>
+        </div>
+        <div class="p-4 flex flex-row items-center gap-x-4">
+          <div>
+            <img src="@/assets/images/Profile picture.png" alt="" />
           </div>
-          <Line class="[min-height:310px] flex-shrink-0 h-80 w-px" />
-          <div
-            class="min-[1270px]:flex-nowrap pl-[15px] flex flex-wrap justify-center gap-x-px gap-y-px items-end"
-          >
-            <div class="flex pb-px flex-col items-center">
-              <div
-                class="font-sen w-[469px] gap-y-[121px] font-bold leading-8 text-2xl flex flex-col items-start"
-              >
-                <div class="items-start flex self-stretch">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
-                  </p>
-                </div>
-                <div
-                  class="min-[1270px]:flex-nowrap flex flex-wrap gap-x-36 gap-y-6 items-start"
-                >
-                  <div class="flex justify-center gap-x-4 items-start">
-                    <div
-                      class="flex-shrink-0 flex h-12 w-12 flex-col items-center"
-                    >
-                      <ProfilePicture class="flex-shrink-0 h-12 w-12" />
-                    </div>
-                    <div class="flex flex-col items-center">
-                      <div>
-                        <div>Jonathan Vallem</div>
-                        <div class="text-zinc-500 font-inter leading-7">
-                          New york, USA
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <BackButton class="flex-shrink-0 h-12 w-12" />
-                </div>
-              </div>
-            </div>
-            <div class="flex pb-1.5 flex-col items-center">
-              <NextButton class="flex-shrink-0 h-16 w-16" />
-            </div>
+          <div class="text-2xl font-bold w-[65%]">
+            <h4>Jonathan Vallem</h4>
+            <p class="text-zinc-500 leading-7">New York, USA</p>
+          </div>
+          <div>
+            <img
+              src="@/assets/images/icon/Back button.svg"
+              alt=""
+              loading="lazy"
+              class="transition-transform duration-300 ease-in-out transform hover:scale-110 hover:filter hover:brightness-50"
+            />
+          </div>
+          <div>
+            <img
+              src="@/assets/images/icon/Next button.svg"
+              alt=""
+              loading="lazy"
+              class="transition-transform duration-300 ease-in-out transform hover:scale-110 hover:filter hover:brightness-50"
+            />
           </div>
         </div>
       </div>

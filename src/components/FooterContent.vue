@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import Logo from '../assets/Logo.vue'
 import Button from '../components/Button.vue'
+import SocialMedia from './SocialMedia.vue'
 </script>
 
 <template>
@@ -10,16 +10,40 @@ import Button from '../components/Button.vue'
     <!-- Logo and Navigation Links -->
     <div class="flex flex-wrap justify-between items-center gap-y-6 gap-x-6">
       <div class="flex items-center">
-        <Logo class="h-7 w-36" />
+        <img
+          class="h-7"
+          src="../assets/images/logo/logo-join-sistem.svg"
+          alt="join-sistem.png"
+        />
       </div>
       <nav
         class="flex flex-wrap justify-center items-center gap-x-6 gap-y-3 text-base"
       >
-        <a href="#home" class="hover:underline">Home</a>
-        <a href="#blog" class="hover:underline">Blog</a>
-        <a href="#about" class="hover:underline">About us</a>
-        <a href="#contact" class="hover:underline">Contact us</a>
-        <a href="#privacy" class="hover:underline">Privacy Policy</a>
+        <a
+          href="/"
+          class="text-white hover:text-x-yellow transition duration-150 ease-in-out"
+          >Home</a
+        >
+        <a
+          href="blog"
+          class="text-white hover:text-x-yellow transition duration-150 ease-in-out"
+          >Blog</a
+        >
+        <a
+          href="about"
+          class="text-white hover:text-x-yellow transition duration-150 ease-in-out"
+          >About us</a
+        >
+        <a
+          href="contact"
+          class="text-white hover:text-x-yellow transition duration-150 ease-in-out"
+          >Contact us</a
+        >
+        <a
+          href="privacy"
+          class="text-white hover:text-x-yellow transition duration-150 ease-in-out"
+          >Privacy Policy</a
+        >
       </nav>
     </div>
 
@@ -56,55 +80,9 @@ import Button from '../components/Button.vue'
           | 020 7993 2905
         </p>
       </div>
+
       <div class="flex gap-4">
-        <a
-          href="https://facebook.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Facebook"
-        >
-          <img
-            class="h-4 w-full"
-            src="../assets/images/logo/FacebookNegative.png"
-            loading="lazy"
-          />
-        </a>
-        <a
-          href="https://twitter.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Twitter"
-        >
-          <img
-            class="h-4 w-full"
-            src="../assets/images/logo/TwitterNegative.png"
-            loading="lazy"
-          />
-        </a>
-        <a
-          href="https://instagram.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Instagram"
-        >
-          <img
-            class="h-4 w-full"
-            src="../assets/images/logo/InstagramNegative.png"
-            loading="lazy"
-          />
-        </a>
-        <a
-          href="https://linkedin.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="LinkedIn"
-        >
-          <img
-            class="h-4 w-full"
-            src="../assets/images/logo/LinkedInNegative.png"
-            loading="lazy"
-          />
-        </a>
+        <SocialMedia class="scale-75" isWhite />
       </div>
     </div>
   </footer>
