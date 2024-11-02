@@ -55,7 +55,7 @@ defineProps({
       class="inline-block w-6 h-6 transition-transform duration-300 ease-in-out hover:scale-110"
     >
       <img
-        src="@/assets/images/logo/Linkedin.svg"
+        src="@/assets/images/logo/LinkedIn.svg"
         alt=""
         loading="lazy"
         class="block w-full h-full bg-no-repeat bg-center bg-contain"
