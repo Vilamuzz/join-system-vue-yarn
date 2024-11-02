@@ -42,7 +42,7 @@ import CategoryCard from '@/components/CategoryCard.vue'
           </p>
         </div>
         <div class="flex pt-4 items-end px-1">
-          <Button text="Read More &gt" route="/blog/post" />
+          <Button text="Read More &gt" route="/post" />
         </div>
       </div>
     </div>

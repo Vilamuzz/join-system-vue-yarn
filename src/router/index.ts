@@ -47,7 +47,7 @@ const router = createRouter({
       component: AuthorView,
     },
     {
-      path: '/blog/post',
+      path: '/post',
       name: 'blog-post',
       component: BlogPostView,
     },
