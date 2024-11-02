@@ -5,7 +5,6 @@ import Join from '@/components/Join.vue'
 import AuthorCard from '@/components/AuthorCard.vue'
 import CategoryCard from '@/components/CategoryCard.vue'
 import PostCard from '@/components/PostCard.vue'
-import backgroundImage from '@/assets/images/man-in-black-suit-wearing-eye-glasses-sitting-on-gray-sofa-using-macbook-3772622.png'
 </script>
 
 <template>
@@ -13,7 +12,9 @@ import backgroundImage from '@/assets/images/man-in-black-suit-wearing-eye-glass
     <div class="w-full flex flex-col mb-20 min-h-screen">
       <div
         class="relative bg-cover bg-center"
-        :style="{ backgroundImage: `url(${backgroundImage})` }"
+        style="
+          background-image: url('@/assets/images/man-in-black-suit-wearing-eye-glasses-sitting-on-gray-sofa-using-macbook-3772622.png');
+        "
       >
         <!-- Dark Overlay -->
         <div class="absolute inset-0 bg-black opacity-50"></div>
