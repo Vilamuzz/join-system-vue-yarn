@@ -5,6 +5,7 @@ import Join from '@/components/Join.vue'
 import AuthorCard from '@/components/AuthorCard.vue'
 import CategoryCard from '@/components/CategoryCard.vue'
 import PostCard from '@/components/PostCard.vue'
+import backgroundImage from '@/assets/images/man-in-black-suit-wearing-eye-glasses-sitting-on-gray-sofa-using-macbook-3772622.png'
 </script>
 
 <template>
@@ -12,9 +13,7 @@ import PostCard from '@/components/PostCard.vue'
     <div class="w-full flex flex-col mb-20 min-h-screen">
       <div
         class="relative bg-cover bg-center"
-        style="
-          background-image: url('/src/assets/images/man-in-black-suit-wearing-eye-glasses-sitting-on-gray-sofa-using-macbook-3772622.png');
-        "
+        :style="{ backgroundImage: `url(${backgroundImage})` }"
       >
         <!-- Dark Overlay -->
         <div class="absolute inset-0 bg-black opacity-50"></div>
@@ -165,24 +164,40 @@ import PostCard from '@/components/PostCard.vue'
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         <CategoryCard
           title="Business"
-          imageSrc="src/assets/images/icon/Icon.png"
           description="Deskripsi singkat untuk kategori 1."
-        />
+          ><img
+            src="../assets/images/icon/Icon.png"
+            alt=""
+            loading="lazy"
+            class="w-10 h-auto bg-gray-100 border rounded-lg"
+        /></CategoryCard>
         <CategoryCard
           title="Startup"
-          imageSrc="src/assets/images/icon/Icon2.png"
           description="Deskripsi singkat untuk kategori 2."
-        />
+          ><img
+            src="../assets/images/icon/Icon2.png"
+            alt=""
+            loading="lazy"
+            class="w-10 h-auto bg-gray-100 border rounded-lg"
+        /></CategoryCard>
         <CategoryCard
           title="Economy"
-          imageSrc="src/assets/images/icon/Icon3.png"
           description="Deskripsi singkat untuk kategori 3."
-        />
+          ><img
+            src="../assets/images/icon/icon3.png"
+            alt=""
+            loading="lazy"
+            class="w-10 h-auto bg-gray-100 border rounded-lg"
+        /></CategoryCard>
         <CategoryCard
           title="Technology"
-          imageSrc="src/assets/images/icon/Icon4.png"
           description="Deskripsi singkat untuk kategori 4."
-        />
+          ><img
+            src="../assets/images/icon/icon4.png"
+            alt=""
+            loading="lazy"
+            class="w-10 h-auto bg-gray-100 border rounded-lg"
+        /></CategoryCard>
       </div>
     </div>
     <div class="relative max-w-[1440px] mx-16 py-16">
@@ -240,37 +255,37 @@ import PostCard from '@/components/PostCard.vue'
 
     <div class="mx-16 flex gap-x-14 justify-center mb-20">
       <img
-        src="../assets/images/logo/Featured in.svg"
+        src="@/assets/images/logo/Featured in.svg"
         alt=""
         loading="lazy"
         class="logo hover:grayscale hover:scale-110 transition-all duration-300"
       />
       <img
-        src="../assets/images/logo/Logo 1.svg"
+        src="@/assets/images/logo/Logo 1.svg"
         alt=""
         loading="lazy"
         class="logo hover:grayscale hover:scale-110 transition-all duration-300"
       />
       <img
-        src="../assets/images/logo/Logo 2.svg"
+        src="@/assets/images/logo/Logo 2.svg"
         alt=""
         loading="lazy"
         class="logo hover:grayscale hover:scale-110 transition-all duration-300"
       />
       <img
-        src="../assets/images/logo/Logo 3.svg"
+        src="@/assets/images/logo/Logo 3.svg"
         alt=""
         loading="lazy"
         class="logo hover:grayscale hover:scale-110 transition-all duration-300"
       />
       <img
-        src="../assets/images/logo/Logo 4.svg"
+        src="@/assets/images/logo/Logo 4.svg"
         alt=""
         loading="lazy"
         class="logo hover:grayscale hover:scale-110 transition-all duration-300"
       />
       <img
-        src="../assets/images/logo/Logo 5.svg"
+        src="@/assets/images/logo/Logo 5.svg"
         alt=""
         loading="lazy"
         class="logo hover:grayscale hover:scale-110 transition-all duration-300"
