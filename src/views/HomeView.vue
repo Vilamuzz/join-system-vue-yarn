@@ -164,22 +164,22 @@ import backgroundImage from '@/assets/images/man-in-black-suit-wearing-eye-glass
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         <CategoryCard
           title="Business"
-          imageSrc="src/assets/images/icon/Icon.png"
+          imageSrc="@/assets/images/icon/Icon.png"
           description="Deskripsi singkat untuk kategori 1."
         />
         <CategoryCard
           title="Startup"
-          imageSrc="src/assets/images/icon/Icon2.png"
+          imageSrc="@/assets/images/icon/Icon2.png"
           description="Deskripsi singkat untuk kategori 2."
         />
         <CategoryCard
           title="Economy"
-          imageSrc="src/assets/images/icon/Icon3.png"
+          imageSrc="@/assets/images/icon/Icon3.png"
           description="Deskripsi singkat untuk kategori 3."
         />
         <CategoryCard
           title="Technology"
-          imageSrc="src/assets/images/icon/Icon4.png"
+          imageSrc="@/assets/images/icon/Icon4.png"
           description="Deskripsi singkat untuk kategori 4."
         />
       </div>
