@@ -166,7 +166,7 @@ import backgroundImage from '@/assets/images/man-in-black-suit-wearing-eye-glass
           title="Business"
           description="Deskripsi singkat untuk kategori 1."
           ><img
-            src="../assets/images/icon/icon.png"
+            src="../assets/images/icon/Icon.png"
             alt=""
             loading="lazy"
             class="w-10 h-auto bg-gray-100 border rounded-lg"
@@ -175,7 +175,7 @@ import backgroundImage from '@/assets/images/man-in-black-suit-wearing-eye-glass
           title="Startup"
           description="Deskripsi singkat untuk kategori 2."
           ><img
-            src="../assets/images/icon/icon2.png"
+            src="../assets/images/icon/Icon2.png"
             alt=""
             loading="lazy"
             class="w-10 h-auto bg-gray-100 border rounded-lg"
@@ -248,7 +248,7 @@ import backgroundImage from '@/assets/images/man-in-black-suit-wearing-eye-glass
         <AuthorCard
           name="Author Name 4"
           position="Position 4"
-          imageSrc="/assets/images/content-baker-with-delicious-puff-in-cafeteria-6205509.png"
+          imageSrc="src/assets/images/content-baker-with-delicious-puff-in-cafeteria-6205509.png"
         />
       </div>
     </div>
