@@ -232,8 +232,13 @@ import backgroundImage from '@/assets/images/man-in-black-suit-wearing-eye-glass
         <AuthorCard
           name="Author Name 4"
           position="Position 4"
-          imageSrc="src/assets/images/content-baker-with-delicious-puff-in-cafeteria-6205509.png"
-        />
+          imageSrc="@/assets/images/content-baker-with-delicious-puff-in-cafeteria-6205509.png"
+          ><img
+            src="@/assets/images/content-baker-with-delicious-puff-in-cafeteria-6205509.png"
+            alt=""
+            loading="lazy"
+            class="w-10 h-auto mb-2 bg-gray-100 border rounded-lg"
+        /></AuthorCard>
       </div>
     </div>
 
