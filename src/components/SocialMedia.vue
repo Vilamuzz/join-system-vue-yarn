@@ -18,46 +18,55 @@ defineProps({
       href="#"
       class="inline-block w-6 h-6 transition-transform duration-300 ease-in-out hover:scale-110"
     >
-      <i
+      <img
+        src="@/assets/images/logo/Facebook.svg"
+        alt=""
+        loading="lazy"
         class="block w-full h-full bg-no-repeat bg-center bg-contain"
-        style="background-image: url('/src/assets/images/logo/Facebook.svg')"
-      ></i>
+      />
     </a>
 
     <a
       href="#"
       class="inline-block w-6 h-6 transition-transform duration-300 ease-in-out hover:scale-110"
     >
-      <i
+      <img
+        src="@/assets/images/logo/Twitter.svg"
+        alt=""
+        loading="lazy"
         class="block w-full h-full bg-no-repeat bg-center bg-contain"
-        style="background-image: url('/src/assets/images/logo/Twitter.svg')"
-      ></i>
+      />
     </a>
 
     <a
       href="https://www.instagram.com/"
       class="inline-block w-6 h-6 transition-transform duration-300 ease-in-out hover:scale-110"
     >
-      <i
+      <img
+        src="@/assets/images/logo/Instagram.svg"
+        alt=""
+        loading="lazy"
         class="block w-full h-full bg-no-repeat bg-center bg-contain"
-        style="background-image: url('/src/assets/images/logo/Instagram.svg')"
-      ></i>
+      />
     </a>
 
     <a
       href="#"
       class="inline-block w-6 h-6 transition-transform duration-300 ease-in-out hover:scale-110"
     >
-      <i
+      <img
+        src="@/assets/images/logo/Linkedin.svg"
+        alt=""
+        loading="lazy"
         class="block w-full h-full bg-no-repeat bg-center bg-contain"
-        style="background-image: url('/src/assets/images/logo/Linkedin.svg')"
-      ></i>
+      />
     </a>
   </div>
 </template>
 
 <style scoped>
-.icon-white i {
-  filter: invert(1);
+.icon-white {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(180deg)
+    brightness(200%) contrast(100%);
 }
 </style>

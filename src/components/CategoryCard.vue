@@ -27,6 +27,7 @@ defineProps({
       alt=""
       class="w-10 h-auto mb-2 bg-gray-100 border rounded-lg"
     />
+    <slot></slot>
     <h3 class="text-2xl font-semibold mb-1">{{ title }}</h3>
     <p class="text-sm">{{ description }}</p>
   </router-link>
