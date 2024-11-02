@@ -166,7 +166,7 @@ import backgroundImage from '@/assets/images/man-in-black-suit-wearing-eye-glass
           title="Business"
           description="Deskripsi singkat untuk kategori 1."
           ><img
-            src="src/assets/images/icon/icon.png"
+            src="../assets/images/icon/icon.png"
             alt=""
             loading="lazy"
             class="w-10 h-auto bg-gray-100 border rounded-lg"
@@ -175,7 +175,7 @@ import backgroundImage from '@/assets/images/man-in-black-suit-wearing-eye-glass
           title="Startup"
           description="Deskripsi singkat untuk kategori 2."
           ><img
-            src="src/assets/images/icon/icon2.png"
+            src="../assets/images/icon/icon2.png"
             alt=""
             loading="lazy"
             class="w-10 h-auto bg-gray-100 border rounded-lg"
@@ -184,7 +184,7 @@ import backgroundImage from '@/assets/images/man-in-black-suit-wearing-eye-glass
           title="Economy"
           description="Deskripsi singkat untuk kategori 3."
           ><img
-            src="src/assets/images/icon/icon3.png"
+            src="../assets/images/icon/icon3.png"
             alt=""
             loading="lazy"
             class="w-10 h-auto bg-gray-100 border rounded-lg"
@@ -193,7 +193,7 @@ import backgroundImage from '@/assets/images/man-in-black-suit-wearing-eye-glass
           title="Technology"
           description="Deskripsi singkat untuk kategori 4."
           ><img
-            src="src/assets/images/icon/icon4.png"
+            src="../assets/images/icon/icon4.png"
             alt=""
             loading="lazy"
             class="w-10 h-auto bg-gray-100 border rounded-lg"
