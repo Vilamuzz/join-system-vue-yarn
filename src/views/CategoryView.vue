@@ -30,25 +30,25 @@ import Tag from '@/components/Tag.vue'
           </div>
           <CategoryListCard title="Startup"
             ><img
-              src="@/assets/images/icon/Icon2.png"
+              src="../assets/images/icon/Icon2.png"
               alt=""
               class="w-10 h-auto bg-gray-100 border rounded-lg"
           /></CategoryListCard>
           <CategoryListCard title="Business"
             ><img
-              src="@/assets/images/icon/Icon.png"
+              src="../assets/images/icon/Icon.png"
               alt=""
               class="w-10 h-auto bg-gray-100 border rounded-lg"
           /></CategoryListCard>
           <CategoryListCard title="Economy"
             ><img
-              src="@/assets/images/icon/icon3.png"
+              src="../assets/images/icon/icon3.png"
               alt=""
               class="w-10 h-auto bg-gray-100 border rounded-lg"
           /></CategoryListCard>
           <CategoryListCard title="Technology"
             ><img
-              src="@/assets/images/icon/icon4.png"
+              src="../assets/images/icon/icon4.png"
               alt=""
               class="w-10 h-auto bg-gray-100 border rounded-lg"
           /></CategoryListCard>
