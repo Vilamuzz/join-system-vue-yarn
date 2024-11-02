@@ -230,7 +230,7 @@ import CategoryCard from '@/components/CategoryCard.vue'
           title="Business"
           description="Deskripsi singkat untuk kategori 1."
           ><img
-            src="@/assets/images/icon/icon.png"
+            src="@/assets/images/icon/Icon.png"
             alt=""
             loading="lazy"
             class="w-10 h-auto bg-gray-100 border rounded-lg"
@@ -239,7 +239,7 @@ import CategoryCard from '@/components/CategoryCard.vue'
           title="Startup"
           description="Deskripsi singkat untuk kategori 2."
           ><img
-            src="@/assets/images/icon/icon2.png"
+            src="@/assets/images/icon/Icon2.png"
             alt=""
             loading="lazy"
             class="w-10 h-auto bg-gray-100 border rounded-lg"
