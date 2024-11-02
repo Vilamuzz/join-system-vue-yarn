@@ -13,7 +13,7 @@ import PostCard from '@/components/PostCard.vue'
       <div
         class="relative bg-cover bg-center"
         style="
-          background-image: url('@/assets/images/man-in-black-suit-wearing-eye-glasses-sitting-on-gray-sofa-using-macbook-3772622.png');
+          background-image: url('/src/assets/images/man-in-black-suit-wearing-eye-glasses-sitting-on-gray-sofa-using-macbook-3772622.png');
         "
       >
         <!-- Dark Overlay -->
@@ -163,76 +163,24 @@ import PostCard from '@/components/PostCard.vue'
     <div class="max-w-[1440px] mx-16 py-16">
       <h2 class="text-3xl font-semibold text-center mb-8">Choose A Category</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        <router-link
-          to="/category"
-          class="border border-gray-300 p-7 text-left hover:bg-blue-500 hover:text-white transition duration-300"
-        >
-          <img
-            src="@/assets/images/icon/Icon.png"
-            alt=""
-            class="w-10 h-auto mb-2 bg-gray-100 border rounded-lg"
-          />
-          <h3 class="text-2xl font-semibold mb-1">Business</h3>
-          <p class="text-sm">Deskripsi singkat untuk kategori 1.</p>
-        </router-link>
-        <router-link
-          to="/category"
-          class="border border-gray-300 p-7 text-left hover:bg-blue-500 hover:text-white transition duration-300"
-        >
-          <img
-            src="@/assets/images/icon/Icon2.png"
-            alt=""
-            class="w-10 h-auto mb-2 bg-gray-100 border rounded-lg"
-          />
-          <h3 class="text-2xl font-semibold mb-1">Startup</h3>
-          <p class="text-sm">Deskripsi singkat untuk kategori 2.</p>
-        </router-link>
-        <router-link
-          to="/category"
-          class="border border-gray-300 p-7 text-left hover:bg-blue-500 hover:text-white transition duration-300"
-        >
-          <img
-            src="@/assets/images/icon/Icon3.png"
-            alt=""
-            class="w-10 h-auto mb-2 bg-gray-100 border rounded-lg"
-          />
-          <h3 class="text-2xl font-semibold mb-1">Economy</h3>
-          <p class="text-sm">Deskripsi singkat untuk kategori 3.</p>
-        </router-link>
-        <router-link
-          to="/category"
-          class="border border-gray-300 p-7 text-left hover:bg-blue-500 hover:text-white transition duration-300"
-        >
-          <img
-            src="@/assets/images/icon/Icon4.png"
-            alt=""
-            class="w-10 h-auto mb-2 bg-gray-100 border rounded-lg"
-          />
-          <h3 class="text-2xl font-semibold mb-1">Technology</h3>
-          <p class="text-sm">Deskripsi singkat untuk kategori 4.</p>
-        </router-link>
         <CategoryCard
-          to="/category"
-          icon="@/assets/images/icon/Icon.png"
           title="Business"
+          imageSrc="src/assets/images/icon/Icon.png"
           description="Deskripsi singkat untuk kategori 1."
         />
         <CategoryCard
-          to="/category"
-          icon="@/assets/images/icon/Icon2.png"
           title="Startup"
+          imageSrc="src/assets/images/icon/Icon2.png"
           description="Deskripsi singkat untuk kategori 2."
         />
         <CategoryCard
-          to="/category"
-          icon="@/assets/images/icon/Icon3.png"
           title="Economy"
+          imageSrc="src/assets/images/icon/Icon3.png"
           description="Deskripsi singkat untuk kategori 3."
         />
         <CategoryCard
-          to="/category"
-          icon="@/assets/images/icon/Icon4.png"
           title="Technology"
+          imageSrc="src/assets/images/icon/Icon4.png"
           description="Deskripsi singkat untuk kategori 4."
         />
       </div>
