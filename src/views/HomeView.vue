@@ -13,7 +13,7 @@ import PostCard from '@/components/PostCard.vue'
       <div
         class="relative bg-cover bg-center"
         style="
-          background-image: url('/src/assets/images/man-in-black-suit-wearing-eye-glasses-sitting-on-gray-sofa-using-macbook-3772622.png');
+          background-image: url('@/assets/images/man-in-black-suit-wearing-eye-glasses-sitting-on-gray-sofa-using-macbook-3772622.png');
         "
       >
         <!-- Dark Overlay -->

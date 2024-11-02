@@ -6,31 +6,33 @@ import AuthorCard from '@/components/AuthorCard.vue'
 <template>
   <MainLayout>
     <div class="mx-16">
-      <div class="flex flex-row border ml-10 items-center mt-20">
-        <div class="w-[60%] text-slate-800 p-10">
-          <h1 class="tracking-[3px] uppercase font-medium leading-5 mb-4">
-            About Us
-          </h1>
-          <h2
-            class="tracking-[-2px] leading-[64px] font-sen font-bold text-5xl items-start flex self-stretch"
-          >
-            We are a team of content writers who share their learnings
-          </h2>
-        </div>
-        <div class="w-[60%] p-5">
-          <p class="tracking-[0px] text-neutral-600 leading-7">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
-        </div>
-      </div>
-      <div class="relative">
+      <div class="relative mt-96">
         <img
           src="@/assets/images/photo-of-woman-wearing-eyeglasses-3184405.png"
           alt=""
         />
+        <div
+          class="flex flex-row ml-10 items-center mt-20 absolute -top-[380px] left-20"
+        >
+          <div class="w-[800px] text-slate-800 p-16 bg-white">
+            <h1 class="tracking-[3px] uppercase font-medium leading-5 mb-4">
+              About Us
+            </h1>
+            <h2
+              class="tracking-[-2px] leading-[64px] font-sen font-bold text-5xl items-start flex self-stretch"
+            >
+              We are a team of content writers who share their learnings
+            </h2>
+          </div>
+          <div class="w-[60%] p-5">
+            <p class="tracking-[0px] text-neutral-600 leading-7">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+        </div>
         <div class="absolute bottom-0 w-2/3">
           <div
             class="bg-blue-600 flex flex-row ml-24 text-white items-center gap-x-8 p-8 w-[70%]"
