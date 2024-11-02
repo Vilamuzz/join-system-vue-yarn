@@ -228,24 +228,40 @@ import CategoryCard from '@/components/CategoryCard.vue'
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         <CategoryCard
           title="Business"
-          imageSrc="src/assets/images/icon/Icon.png"
           description="Deskripsi singkat untuk kategori 1."
-        />
+          ><img
+            src="@/assets/images/icon/icon.png"
+            alt=""
+            loading="lazy"
+            class="w-10 h-auto bg-gray-100 border rounded-lg"
+        /></CategoryCard>
         <CategoryCard
           title="Startup"
-          imageSrc="src/assets/images/icon/Icon2.png"
           description="Deskripsi singkat untuk kategori 2."
-        />
+          ><img
+            src="@/assets/images/icon/icon2.png"
+            alt=""
+            loading="lazy"
+            class="w-10 h-auto bg-gray-100 border rounded-lg"
+        /></CategoryCard>
         <CategoryCard
           title="Economy"
-          imageSrc="src/assets/images/icon/Icon3.png"
           description="Deskripsi singkat untuk kategori 3."
-        />
+          ><img
+            src="@/assets/images/icon/icon3.png"
+            alt=""
+            loading="lazy"
+            class="w-10 h-auto bg-gray-100 border rounded-lg"
+        /></CategoryCard>
         <CategoryCard
           title="Technology"
-          imageSrc="src/assets/images/icon/Icon4.png"
           description="Deskripsi singkat untuk kategori 4."
-        />
+          ><img
+            src="@/assets/images/icon/icon4.png"
+            alt=""
+            loading="lazy"
+            class="w-10 h-auto bg-gray-100 border rounded-lg"
+        /></CategoryCard>
       </div>
       <Join />
     </div>

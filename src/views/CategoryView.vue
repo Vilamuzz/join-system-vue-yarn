@@ -28,22 +28,30 @@ import Tag from '@/components/Tag.vue'
           >
             <h1>Categories</h1>
           </div>
-          <CategoryListCard
-            title="Startup"
-            imageSrc="src/assets/images/icon/Icon2.png"
-          />
-          <CategoryListCard
-            title="Business"
-            imageSrc="src/assets/images/icon/Icon.png"
-          />
-          <CategoryListCard
-            title="Economy"
-            imageSrc="src/assets/images/icon/Icon3.png"
-          />
-          <CategoryListCard
-            title="Technology"
-            imageSrc="src/assets/images/icon/Icon4.png"
-          />
+          <CategoryListCard title="Startup"
+            ><img
+              src="@/assets/images/icon/icon2.png"
+              alt=""
+              class="w-10 h-auto bg-gray-100 border rounded-lg"
+          /></CategoryListCard>
+          <CategoryListCard title="Business"
+            ><img
+              src="@/assets/images/icon/icon.png"
+              alt=""
+              class="w-10 h-auto bg-gray-100 border rounded-lg"
+          /></CategoryListCard>
+          <CategoryListCard title="Economy"
+            ><img
+              src="@/assets/images/icon/icon3.png"
+              alt=""
+              class="w-10 h-auto bg-gray-100 border rounded-lg"
+          /></CategoryListCard>
+          <CategoryListCard title="Technology"
+            ><img
+              src="@/assets/images/icon/icon4.png"
+              alt=""
+              class="w-10 h-auto bg-gray-100 border rounded-lg"
+          /></CategoryListCard>
         </div>
 
         <div class="p-5 items-start flex flex-col gap-y-4">

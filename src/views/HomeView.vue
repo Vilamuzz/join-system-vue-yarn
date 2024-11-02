@@ -164,22 +164,33 @@ import backgroundImage from '@/assets/images/man-in-black-suit-wearing-eye-glass
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         <CategoryCard
           title="Business"
-          imageSrc="src/assets/images/icon/icon.png"
           description="Deskripsi singkat untuk kategori 1."
-        />
+          ><img
+            src="@/assets/images/icon/icon.png"
+            alt=""
+            loading="lazy"
+            class="w-10 h-auto bg-gray-100 border rounded-lg"
+        /></CategoryCard>
         <CategoryCard
           title="Startup"
-          imageSrc="src/assets/images/icon/icon2.png"
           description="Deskripsi singkat untuk kategori 2."
-        />
+          ><img
+            src="@/assets/images/icon/icon2.png"
+            alt=""
+            loading="lazy"
+            class="w-10 h-auto bg-gray-100 border rounded-lg"
+        /></CategoryCard>
         <CategoryCard
           title="Economy"
-          imageSrc="@/assets/images/icon/icon3.png"
           description="Deskripsi singkat untuk kategori 3."
-        />
+          ><img
+            src="@/assets/images/icon/icon3.png"
+            alt=""
+            loading="lazy"
+            class="w-10 h-auto bg-gray-100 border rounded-lg"
+        /></CategoryCard>
         <CategoryCard
           title="Technology"
-          imageSrc="/assets/images/icon/icon4.png"
           description="Deskripsi singkat untuk kategori 4."
           ><img
             src="@/assets/images/icon/icon4.png"
@@ -244,37 +255,37 @@ import backgroundImage from '@/assets/images/man-in-black-suit-wearing-eye-glass
 
     <div class="mx-16 flex gap-x-14 justify-center mb-20">
       <img
-        src="../assets/images/logo/Featured in.svg"
+        src="@/assets/images/logo/Featured in.svg"
         alt=""
         loading="lazy"
         class="logo hover:grayscale hover:scale-110 transition-all duration-300"
       />
       <img
-        src="../assets/images/logo/Logo 1.svg"
+        src="@/assets/images/logo/Logo 1.svg"
         alt=""
         loading="lazy"
         class="logo hover:grayscale hover:scale-110 transition-all duration-300"
       />
       <img
-        src="../assets/images/logo/Logo 2.svg"
+        src="@/assets/images/logo/Logo 2.svg"
         alt=""
         loading="lazy"
         class="logo hover:grayscale hover:scale-110 transition-all duration-300"
       />
       <img
-        src="../assets/images/logo/Logo 3.svg"
+        src="@/assets/images/logo/Logo 3.svg"
         alt=""
         loading="lazy"
         class="logo hover:grayscale hover:scale-110 transition-all duration-300"
       />
       <img
-        src="../assets/images/logo/Logo 4.svg"
+        src="@/assets/images/logo/Logo 4.svg"
         alt=""
         loading="lazy"
         class="logo hover:grayscale hover:scale-110 transition-all duration-300"
       />
       <img
-        src="../assets/images/logo/Logo 5.svg"
+        src="@/assets/images/logo/Logo 5.svg"
         alt=""
         loading="lazy"
         class="logo hover:grayscale hover:scale-110 transition-all duration-300"
